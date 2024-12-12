@@ -1,0 +1,117 @@
+/* Sección principal con la imagen de portada */
+.main-cover {
+    height: 500px;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -79px;
+}
+
+/* Imagen que gira */
+.img-cover {
+    margin-top: 70px;
+    width: 340px;
+    animation: girar 25s linear infinite;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Título principal */
+.main-title {
+    font-family: 'DieNasty';
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 7px rgba(255, 255, 255, .7);
+    padding: 30px;
+}
+
+/* Sección de miembros */
+.members-container {
+    background: url('../../assets/images/kiss-members-backgroud.jpg') no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    z-index: 10;
+}
+
+.members-container::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.79);
+    transform: translateZ(-1px);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.members-container::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.79);
+    transform: translateZ(-1px);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.member-container {
+    text-align: center;
+}
+
+/* Contenedor de los iconos de los miembros */
+.members-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 133px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.member-icon {
+    height: 133px;
+    width: auto;
+    transition: filter .52s;
+}
+
+.member-icon:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, .43));
+}
+
+.member-name {
+    color: #fff;
+    font-family: 'DieNasty';
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: text-shadow .52s;
+}
+
+.member-icon:hover~.member-name {
+    text-shadow: 0 0 10px rgba(255, 255, 255, .7);
+}
+
+a {
+    text-decoration: none !important;
+}

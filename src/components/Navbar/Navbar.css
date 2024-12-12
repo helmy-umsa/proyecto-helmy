@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'DieNasty';
+    src: url('../../assets/fonts/DieNasty.woff2') format('woff2'),
+        url('../../assets/fonts/DieNasty.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Barra de navegación */
+.navbar-items {
+    position: fixed;
+    height: 79px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.907);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    gap: 70px;
+    backdrop-filter: blur(3.4px);
+    border-bottom: 1px ridge rgba(70, 70, 70, 0.16);
+    list-style-type: none;
+}
+
+/* Enlaces de la barra de navegación */
+.navbar__link {
+    color: #ddd;
+    /* Mejor contraste */
+    text-decoration: none;
+    font-family: 'DieNasty';
+    font-size: 1.195rem;
+    letter-spacing: 1px;
+    transition: color .3s, text-shadow .3s;
+}
+
+.navbar__link:hover {
+    color: #fff;
+    text-shadow: 0 0 7px rgba(255, 255, 255, .7);
+}
+
+/* Imagen del logo en la barra de navegación */
+.navbar__img-logo {
+    height: 70px;
+    width: auto;
+    padding: 13.3px;
+    cursor: pointer;
+    transition: filter .52s;
+}
+
+.navbar__img-logo:hover {
+    filter: drop-shadow(0 0 3.4px rgba(255, 255, 255, .43));
+}
+
+/* Submenús */
+.sub-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Centrado horizontalmente */
+    visibility: hidden; /* Inicialmente invisible */
+    opacity: 0; /* Empieza invisible */
+    transform: translateX(-50%) translateY(10px); /* Centrado con respecto al elemento padre y desplazado hacia arriba */
+    background-color: rgba(25, 25, 25, 0.952);
+    border: 1px ridge rgba(70, 70, 70, 0.106);
+    z-index: 1;
+    min-width: 130px;
+    transition: opacity 0.43s ease, transform 0.43s ease, visibility 0s 0.43s; /* Animación de entrada */
+}
+
+.sub-items .navbar__link {
+    padding: 12px 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown:hover > .sub-items {
+    visibility: visible; /* Se vuelve visible */
+    opacity: 1; /* Se vuelve visible */
+    transform: translateX(-50%) translateY(2px); /* Se centra y se mueve a su posición original */
+    transition: opacity 0.43s ease, transform 0.43s ease;
+}
+
+/* Posicionamiento de elementos de menú con submenú */
+.dropdown {
+    position: relative;
+}

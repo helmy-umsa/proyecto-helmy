@@ -1,0 +1,89 @@
+/* Footer */
+
+footer {
+    background-color: #111;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 10px 70px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 160px;
+    margin-bottom: 20px;
+}
+
+.footer__logo {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo-img {
+    width: 250px;
+}
+
+.footer__social {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: 'DieNasty';
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer__social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.footer__social-icon {
+    font-size: 2.005em;
+    cursor: pointer;
+    color: #888;
+    transition: color .7s;
+}
+
+.footer__social .bi-facebook:hover {
+    color: #0866ff;
+}
+
+.footer__social .bi-twitter-x:hover {
+    color: #fff;
+    text-shadow: 0 0 7px rgb(255, 255, 255,  0.7);
+}
+
+.footer__social .bi-instagram:hover {
+    color: #eb3e7d;
+}
+
+.footer__social .bi-youtube:hover {
+    color: #ff0000;
+}
+
+.footer__made-by {
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 100;
+    /* background-color: #000; */
+    border-top: 1px ridge #333;
+    font-size: .88rem;
+}
+
+.heart-icon {
+    color: red;
+}
