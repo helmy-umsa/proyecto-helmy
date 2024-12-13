@@ -15,31 +15,33 @@ export default function Home() {
             </div>
 
             <section className="members-container">
-                <h2 className="main-title">The hottest Band in the World!</h2>
-                <div className="members-info">
-                    <div className="member-container">
-                        <Link to={'gene#'}>
-                            <img src={demon} alt="" className="member-icon"></img>
-                            <h3 className="member-name">Gene Simmons</h3>
-                        </Link>
-                    </div>
-                    <div className="member-container">
-                        <Link to={'paul#'}>
-                            <img src={starchild} alt="" className="member-icon"></img>
-                            <h3 className="member-name">Paul Stanley</h3>
-                        </Link>
-                    </div>
-                    <div className="member-container">
-                        <Link to={'peter#'}>
-                            <img src={catman} alt="" className="member-icon"></img>
-                            <h3 className="member-name">Peter Criss</h3>
-                        </Link>
-                    </div>
-                    <div className="member-container">
-                        <Link to={'ace#'}>
-                            <img src={spaceman} alt="" className="member-icon"></img>
-                            <h3 className="member-name">Ace Frehley</h3>
-                        </Link>
+                <div className='container'>
+                    <h2 className="main-title">The hottest Band in the World!</h2>
+                    <div className="members-info">
+                        <div className="member-container">
+                            <Link to={'gene#'}>
+                                <img src={demon} alt="" className="member-icon"></img>
+                                <h3 className="member-name">Gene Simmons</h3>
+                            </Link>
+                        </div>
+                        <div className="member-container">
+                            <Link to={'paul#'}>
+                                <img src={starchild} alt="" className="member-icon"></img>
+                                <h3 className="member-name">Paul Stanley</h3>
+                            </Link>
+                        </div>
+                        <div className="member-container">
+                            <Link to={'peter#'}>
+                                <img src={catman} alt="" className="member-icon"></img>
+                                <h3 className="member-name">Peter Criss</h3>
+                            </Link>
+                        </div>
+                        <div className="member-container">
+                            <Link to={'ace#'}>
+                                <img src={spaceman} alt="" className="member-icon"></img>
+                                <h3 className="member-name">Ace Frehley</h3>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -5,7 +5,7 @@ export const ProfileCard = ({ title, image, description, href = '' }) => {
 
     return (
         <div className="container my-5">
-            <div className="card col-6 m-auto p-3">
+            <div className="card col-12 col-md-6 m-auto p-3">
                 <div className="card-body">
                     <h2 className="text-center">{title}</h2>
                     <hr />

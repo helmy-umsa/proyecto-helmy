@@ -7,11 +7,11 @@
     justify-content: center;
     align-items: center;
     margin-top: -79px;
+    padding-top: 70px;
 }
 
 /* Imagen que gira */
 .img-cover {
-    margin-top: 70px;
     width: 340px;
     animation: girar 25s linear infinite;
     border-radius: 8px;
@@ -46,7 +46,7 @@
     background-attachment: fixed;
     position: relative;
     width: 100%;
-    padding: 25px;
+    padding: 50px 25px;
     z-index: 10;
 }
 
@@ -57,20 +57,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.79);
-    transform: translateZ(-1px);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.members-container::after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.79);
+    background-color: rgba(0, 0, 0, 0.745);
     transform: translateZ(-1px);
     background-size: 100%;
     z-index: -1;
@@ -78,6 +65,7 @@
 
 .member-container {
     text-align: center;
+    flex: 1 0 190px;
 }
 
 /* Contenedor de los iconos de los miembros */
@@ -85,7 +73,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 133px;
+    row-gap: 61px;
+    column-gap: 88px;
     padding: 30px;
     flex-wrap: wrap;
 }
@@ -114,4 +103,10 @@
 
 a {
     text-decoration: none !important;
+}
+
+@media (max-width: 430px) {
+    .img-cover {
+        width: 70%;
+    }
 }

@@ -22,7 +22,9 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer__logo">
-                        <img src={logo_white} alt="" className="footer__logo-img"></img>
+                        <a href='#'>
+                            <img src={logo_white} alt="" className="footer__logo-img"></img>
+                        </a>
                     </div>
                     <div className="footer__social">
                         <div>
@@ -36,7 +38,7 @@ export default function Footer() {
                                 </a>
                                 <a href='https://www.instagram.com/kissarmybolivia/' target='_blank'>
                                     <i className="bi-instagram footer__social-icon"></i>
-                                    </a>
+                                </a>
                                 <a href='https://www.youtube.com/channel/UCyOw2FDjfQOFQH7paKxNVvA' target='_blank'>
                                     <i className="bi-youtube footer__social-icon"></i>
                                 </a>
@@ -46,7 +48,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer__made-by">
-                Made with <span className="bi-heart-fill heart-icon"></span> by Helmuth Paz Vargas. &lt;HeLmY /&gt; &copy; 2024
+                Made with <span className="bi-heart-fill heart-icon"></span> by Helmuth Paz Vargas. &copy; 2024
             </div>
         </footer>
     );

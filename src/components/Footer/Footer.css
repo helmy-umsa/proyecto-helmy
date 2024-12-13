@@ -19,13 +19,13 @@ footer {
 }
 
 .footer__logo {
-    padding: 25px;
+    padding: 25px 0;
     display: flex;
     justify-content: center;
 }
 
 .footer__logo-img {
-    width: 250px;
+    width: 100%;
 }
 
 .footer__social {
