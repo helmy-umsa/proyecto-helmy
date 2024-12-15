@@ -1,6 +1,6 @@
 /* Sección principal con la imagen de portada */
 .main-cover {
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-color: #111;
     display: flex;
@@ -12,7 +12,7 @@
 
 /* Imagen que gira */
 .img-cover {
-    width: 340px;
+    width: 493px;
     animation: girar 25s linear infinite;
     border-radius: 8px;
     overflow: hidden;
@@ -41,7 +41,7 @@
 
 /* Sección de miembros */
 .members-container {
-    background: url('../../assets/images/kiss-members-backgroud.jpg') no-repeat;
+    background: url('../../assets/images/kiss-7.jpg') no-repeat;
     background-position: top;
     background-attachment: fixed;
     position: relative;
@@ -105,7 +105,13 @@ a {
     text-decoration: none !important;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
+
+    .main-cover {
+        height: 450px;
+        margin-top: -70px;
+    }
+
     .img-cover {
         width: 70%;
     }

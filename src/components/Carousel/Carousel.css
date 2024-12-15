@@ -1,0 +1,11 @@
+.carousel-container img {
+    height: 520px;
+    object-fit: contain;
+}
+
+.carousel-container {
+    /* background-color: #000; */
+}
+
+
+
